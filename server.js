@@ -17,7 +17,7 @@ const app = express();
 // Configure CORS for HTTP requests
 //CORS - cross origin resource sharing
 app.use(cors({
-    origin: ['http://localhost:3000/register','http://localhost:3000'],
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
 }));
