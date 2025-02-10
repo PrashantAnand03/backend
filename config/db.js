@@ -5,7 +5,7 @@ const connectDB = async () => {
         // 'mongodb://127.0.0.1:27017/internship'
         console.log('MongoDB connected');
     } catch (error) {
-        console.error('MongoDB connection error:', error.message);
+        console.error(`MongoDB connection error: ${process.env.MONGO_URI}`, error.message);
         process.exit(1);
     }
 };
