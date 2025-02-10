@@ -31,6 +31,10 @@ router.post('/register', async (req, res) => {
   }
 });
 
+router.get('/register',async(req,res)=>{
+  res.send("Register Route Hit");
+});
+
 // POST: Sign In
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
