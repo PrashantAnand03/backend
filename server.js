@@ -24,8 +24,8 @@ app.use(cors({
 
 // Middleware and routes
 app.use(express.json());
-app.use('/api/auth', authRoutes);
-app.use('/api/documents', documentRoutes);
+app.use('/auth', authRoutes);
+app.use('/documents', documentRoutes);
 
 //default routes 
 app.get('/',(req,res)=>{
